@@ -2,6 +2,9 @@ import React from 'react';
 import Memories from './memories';
 import { useNavigate } from 'react-router-dom';
 import Yes from './yes';
+import myImg from './assets/images/myimg.png';
+import nxtImg from './assets/images/imgextra_wide.jpg';
+import thirdImg from './assets/images/thirdimg.png';
 
 function Body() {
     const navigate = useNavigate();
@@ -186,7 +189,7 @@ function Body() {
                         <div
                           className="absolute inset-0 bg-center bg-cover"
                           style={{
-                            backgroundImage: `url("./assets/images/myimg.png")`,
+                            backgroundImage: `url("${myImg}")`,
                           }}
                         ></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-40"></div>
@@ -250,7 +253,7 @@ function Body() {
                         <div className="w-full h-full"
                           style={{
                         backgroundImage:
-                          `url("./assets/images/imgextra_wide.jpg")`,
+                          `url("${nxtImg}")`,
                           }}
                         ></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -297,7 +300,7 @@ function Body() {
                       className="absolute inset-0 bg-center bg-cover"
                       style={{
                         backgroundImage:
-                          `url("./assets/images/thirdimg.png")`,
+                          `url("${thirdImg}")`,
                       }}
                     />
 
