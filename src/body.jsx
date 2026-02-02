@@ -250,7 +250,7 @@ function Body() {
                     </div>
                     <div className="w-full md:w-[45%] flex justify-center md:justify-start order-2 md:order-3">
                       <div className="group relative w-full h-[32rem] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-500">
-                        <div className="w-full h-full"
+                        <div className="w-full h-full bg-cover bg-center"
                           style={{
                         backgroundImage:
                           `url("${nxtImg}")`,
