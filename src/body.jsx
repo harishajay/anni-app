@@ -3,7 +3,7 @@ import Memories from './memories';
 import { useNavigate } from 'react-router-dom';
 import Yes from './yes';
 import myImg from './assets/images/myimg.png';
-import nxtImg from './assets/images/imgextra_wide.jpg';
+import nxtImg from './assets/images/imgextra.jpg';
 import thirdImg from './assets/images/thirdimg.png';
 
 function Body() {
@@ -14,7 +14,7 @@ function Body() {
   };
 
   const goToYes = () => {
-    navigate('/yes');
+    navigate('/yes'); 
   };
 
   return (
