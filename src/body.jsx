@@ -2,7 +2,9 @@ import React from 'react';
 import Memories from './memories';
 import { useNavigate } from 'react-router-dom';
 import Yes from './yes';
-
+import myImg from './assets/images/myimg.png';
+import nxtImg from './assets/images/imgextra_wide.jpg';
+import thirdImg from './assets/images/thirdimg.png';
 function Body() {
     const navigate = useNavigate();
 
@@ -73,14 +75,6 @@ function Body() {
           <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 relative">
             <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-rosegold/10 rounded-full blur-3xl"></div>
-            {/* <div className="intertwined-hearts absolute top-10 right-20 scale-150 opacity-40 animate-heartbeat">
-              <span className="material-symbols-outlined heart-red">
-                favorite
-              </span>
-              <span className="material-symbols-outlined heart-black">
-                favorite
-              </span>
-            </div> */}
 
             <div className="layout-content-container flex flex-col max-w-[960px] w-full z-10">
               <div className="@[480px]:p-8">
@@ -194,7 +188,7 @@ function Body() {
                         <div
                           className="absolute inset-0 bg-center bg-cover"
                           style={{
-                            backgroundImage: 'url("/images/myimg.png")',
+                            backgroundImage: `url("${myImg}")`,
                           }}
                         ></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-40"></div>
@@ -255,11 +249,12 @@ function Body() {
                     </div>
                     <div className="w-full md:w-[45%] flex justify-center md:justify-start order-2 md:order-3">
                       <div className="group relative w-full h-[32rem] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-500">
-                        <img
-                          src="/images/imgextra_wide.jpg"
-                          alt="memory"
-                          className="absolute inset-0 w-full h-full object-cover object-top"
-                        />
+                        <div className="w-full h-full"
+                          style={{
+                        backgroundImage:
+                          `url("${nxtImg}")`,
+                          }}
+                        ></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div className="absolute bottom-5 left-5 right-5 text-white z-10">
                           <p className="text-xs font-bold tracking-widest uppercase mb-1">
@@ -304,7 +299,7 @@ function Body() {
                       className="absolute inset-0 bg-center bg-cover"
                       style={{
                         backgroundImage:
-                          'url("images/thirdimg.png")',
+                          `url("${thirdImg}")`,
                       }}
                     />
 
