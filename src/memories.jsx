@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ourFam from './assets/images/ourfam.jpg';
 
 function Memories() {
 
@@ -246,12 +247,12 @@ function Memories() {
       <div className="card-dark p-5 rounded-xl shadow-2xl hover:-translate-y-2 transition-transform duration-500">
         <div className="overflow-hidden rounded-lg mb-6 aspect-[4/5] border border-white/5">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuChtpZCrQFsQihCWQtsK8BbELhkyUMCYpm4p5MleKF5UrVHZPys7msNsALwYeHr2z87Al5mXzzc8ZTumfeXEWjOZ_aNKiLk5VSMLQtlHdYgamvgKgWvaO6fs3GKmJCssSnHVdHXGFEvm1aY3nZaKSbu1l6SAMQ-1if--ytpNcFlsNutYaGdYUEhMZm4d9QPvhhsNeytlEcQtblR_nqqO_qyy0Mp8go8McWkx_D19g_ebKHErBZo3rRSS_Uafa6bzM5tbo4XfWh5VmKz"
+            src={ourFam}
             alt="Reflection"
             className="w-full h-full object-cover grayscale-[30%] brightness-[80%] hover:brightness-100 transition-all"
           />
         </div>
-        <h3 className="text-white text-2xl font-serif italic text-center">Midnight Gaze</h3>
+        <h3 className="text-white text-2xl font-serif italic text-center">Our Family</h3>
       </div>
     </div>
 
