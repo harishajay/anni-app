@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Celebration() {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function Celebration() {
       }));
 
       setElements((prev) => [...prev, { id, x, y, particles }]);
-      
+
       // Trigger sky flash
       setBgFlash(true);
       setTimeout(() => setBgFlash(false), 100);
@@ -39,20 +39,30 @@ function Celebration() {
   }, []);
 
   return (
-    <div className={`w-screen h-screen transition-colors duration-200 relative overflow-hidden ${bgFlash ? 'bg-zinc-900' : 'bg-black'}`}>
-      
+    <div
+      className={`w-screen h-screen transition-colors duration-200 relative overflow-hidden ${bgFlash ? 'bg-zinc-900' : 'bg-black'}`}
+    >
       {/* Navigation */}
       <nav className="absolute top-0 w-full flex justify-between px-12 py-8 z-50">
-        <div onClick={() => navigate("/")} className="flex items-center gap-2 cursor-pointer group">
-          <span className="material-symbols-outlined text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">favorite</span>
-          <h2 className="text-white font-serif text-xl opacity-90 group-hover:opacity-100">Forever & Always</h2>
+        <div
+          onClick={() => navigate('/')}
+          className="flex items-center gap-2 cursor-pointer group"
+        >
+          <span className="material-symbols-outlined text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
+            favorite
+          </span>
+          <h2 className="text-white font-serif text-xl opacity-90 group-hover:opacity-100">
+            Forever & Always
+          </h2>
         </div>
       </nav>
 
       {/* Main Text with Neon Glow */}
       <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-        <h1 className="text-white text-6xl md:text-9xl font-black italic tracking-tighter drop-shadow-[0_0_30px_rgba(255,255,255,0.5)]">
-          Congratulations!
+        <h1 className="text-white text-3xl md:text-6xl font-black italic tracking-tighter drop-shadow-[0_0_30px_rgba(255,255,255,0.5)]">
+          Congrats !
+          <br />
+        <span className="block mt-6">Thank you god & my love</span>
         </h1>
       </div>
 
@@ -68,16 +78,16 @@ function Celebration() {
               width: p.size,
               height: p.isPopper ? p.size * 1.5 : p.size,
               backgroundColor: p.color,
-              borderRadius: p.isPopper ? "2px" : "50%",
+              borderRadius: p.isPopper ? '2px' : '50%',
               // THE HIGHLIGHT: Multiple layered shadows for intense glow
               boxShadow: `0 0 ${p.size}px ${p.color}, 0 0 ${p.size * 2}px ${p.color}, 0 0 ${p.size * 4}px white`,
-              "--dx": `${p.dx}px`,
-              "--dy": `${p.dy}px`,
-              "--rot": `${p.rotation}deg`,
+              '--dx': `${p.dx}px`,
+              '--dy': `${p.dy}px`,
+              '--rot': `${p.rotation}deg`,
               animation: `pop 1.5s cubic-bezier(0.1, 1, 0.3, 1) forwards`,
             }}
           />
-        ))
+        )),
       )}
 
       <style>{`
@@ -102,5 +112,3 @@ function Celebration() {
 }
 
 export default Celebration;
-
-

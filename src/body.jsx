@@ -100,9 +100,8 @@ function Body() {
                       <span className="text-primary">My Love!</span>
                     </h1>
                     <h2 className="text-[#4a363b] dark:text-gray-300 text-lg font-normal leading-relaxed max-w-[600px] @[480px]:text-xl">
-                      Every moment with you has been a dream come true. You are
-                      my today and all of my tomorrows. I have something special
-                      to ask you...
+                      Every moment with you has been a dream come true. At last, I think I’ve found my girl.
+                      I have something special to ask you…
                     </h2>
                   </div>
 
