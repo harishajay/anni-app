@@ -263,8 +263,7 @@ function Memories() {
           <a className="text-starlight text-xs font-bold tracking-widest uppercase opacity-70 hover:opacity-100">Our Story</a>
         </nav>
 
-        <div className="floating-message text-2xl top-[25%] left-[8%]">"I really controlled myself when the light fell on you</div>
-        <div className="floating-message text-2xl top-[35%] right-[12%]">Sharing the same sky, always.</div>
+        <div className="floating-message text-2xl top-[35%] right-[12%]">"I really controlled myself when the light fell on you</div>
 
         <div className="relative z-20 text-center mt-[45vh]">
           <h1 className="text-white text-6xl md:text-8xl font-serif italic mb-4 drop-shadow-2xl">Moonlight Ocean</h1>

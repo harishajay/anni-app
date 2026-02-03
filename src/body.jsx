@@ -267,32 +267,6 @@ function Body() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Third Memory */}
-                  {/* <div className="flex flex-col md:flex-row items-center gap-12">
-                    <div className="md:w-1/2 flex justify-end">
-                      <div
-                        className="w-80 h-96 rounded-3xl shadow-2xl bg-cover bg-center rotate-[-2deg]"
-                        style={{
-                          backgroundImage:
-                            'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCSxE73ATCZwkc6Oy46fY5lPvZL4oESJACwynFros5-19RADzA7brn2nluvITYk9JE1HMzW6m2nEUf1TQkix4om-mjVcI-fDk6GNFkk5c9Ao-nYrwZavh_rhNTtiLONtug4W7F_C_zNUbLhlw8SHm4f_DxRebTmWfrXHd3M-F9Na5oTAhT2kbyGnZ8CueiLwlqfJkK6ZK1ysPavzNp3o9YXr3AavF2CKVR1zZi23URnJRTg4CZ64yOp2ayC43wu0-CtjphW_iN0vNS")',
-                        }}
-                      />
-                    </div>
-
-                    <div className="relative z-10 size-12 bg-white border-2 border-rose-400 rounded-full flex items-center justify-center shadow-lg">
-                      💞
-                    </div>
-
-                    <div className="md:w-1/2 text-center md:text-left">
-                      <h3 className="text-2xl font-bold text-rose-800 mb-2">
-                        Quiet Moments
-                      </h3>
-                      <p className="text-rose-700 italic">
-                        "The calm that felt like home."
-                      </p>
-                    </div>
-                  </div> */}
                   <div className="group relative w-80 h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform -rotate-2 hover:rotate-0 transition-all duration-500">
                     {/* Image */}
                     <div
