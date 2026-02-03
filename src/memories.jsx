@@ -302,7 +302,7 @@ function Memories() {
 
       <footer className="bg-midnight-black relative z-40 py-20 text-center border-t border-white/5">
         <p className="text-starlight font-serif italic text-xl mb-4 opacity-80">"Forever like the ocean, always returning to you."</p>
-        <p className="text-slate-500 text-[10px] font-bold tracking-[0.6em] uppercase">Midnight Moonlight Gallery • Established 03/02/2024</p>
+        <p className="text-slate-500 text-[10px] font-bold tracking-[0.6em] uppercase"> Established @ 03/02/2025 </p>
       </footer>
     </>
   );

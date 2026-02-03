@@ -407,7 +407,7 @@ function Body() {
               </span>
             </div>
             <p className="font-medium tracking-wide">
-              © 2024 • Our Forever Story • Built with love
+              @ 2025 • Our Forever Story • Built with love
             </p>
             <div className="absolute bottom-2 left-1/2 -translate-x-32 kiss-mark -rotate-12 opacity-10">
               <span className="material-symbols-outlined text-3xl text-primary">
