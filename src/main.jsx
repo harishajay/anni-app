@@ -5,6 +5,7 @@ import App from "./App";
 import Body from "./body";
 import Memories from "./memories"
 import Yes from "./yes";
+import Celebration from "./celebartion";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         path: "yes",
         element: <Yes />
       }, // yes page
+      {
+        path: "celebration",
+        element: <Celebration />
+      }, // celebration page
     ],
   },
 ],

@@ -1,11 +1,13 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Yes() {
-
-    const navigate = useNavigate();
-    const goToHome = () => {
-    navigate("/"); // redirect to home page
+  const navigate = useNavigate();
+  const goToHome = () => {
+    navigate('/'); // redirect to home page
+  };
+  const goToCelebration = () => {
+    navigate('/celebration'); // redirect to celebration page
   };
   return (
     <>
@@ -94,7 +96,10 @@ function Yes() {
                   <path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" />
                 </svg>
               </div>
-                          <h2 onClick={goToHome} className="text-xl font-bold tracking-tight italic cursor-pointer hover:text-primary">
+              <h2
+                onClick={goToHome}
+                className="text-xl font-bold tracking-tight italic cursor-pointer hover:text-primary"
+              >
                 Forever &amp; Always
               </h2>
             </div>
@@ -109,8 +114,8 @@ function Yes() {
           </header>
 
           {/* Main */}
-          <main className="relative z-20 flex flex-col items-center justify-center px-4 w-full max-w-4xl">
-            <div className="glass-panel rounded-xl p-12 md:p-20 text-center shadow-2xl flex flex-col items-center gap-8 border-2 border-white/40">
+          <main className="relative z-20 flex flex-col items-center justify-center px-4 w-half max-w-3xl">
+            <div className="glass-panel rounded-xl p-2 md:p-4 text-center shadow-2xl flex flex-col items-center gap-8 border border-white/40">
               <div className="text-primary animate-pulse">
                 <span
                   className="material-symbols-outlined text-6xl"
@@ -125,29 +130,35 @@ function Yes() {
               </h1>
 
               <p className="text-background-dark/80 text-lg md:text-xl font-medium leading-relaxed max-w-2xl italic">
-                "Every moment with you has been a dream come true. Today, I want
+                Every moment with you has been a dream come true. Today, I want
                 to make that dream our forever. From our first date to this very
-                second, my heart has known only you."
+                second—on my graduation day—if I hadn’t taken that turn to see
+                you at that place, I don’t think this happiness would have been
+                possible. I believe I chose the right path to the right person.
+                Please leave your dark days behind and come with me into the
+                light side of life. Will you marry me and be my partner in this
+                beautiful journey of life? ❤️🖤
               </p>
 
-              <button className="group relative flex min-w-[240px] items-center justify-center overflow-hidden rounded-full h-16 px-8 bg-primary text-white text-xl font-bold tracking-widest transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/40">
+              <button onClick={goToCelebration}
+                className="group relative flex min-w-[240px] items-center justify-center overflow-hidden rounded-full h-16 px-8 bg-primary text-white text-xl font-bold tracking-widest transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/40">
                 <span className="material-symbols-outlined mr-2">diamond</span>
                 YES, FOREVER!
               </button>
 
               <div className="text-background-dark/40 text-sm font-medium tracking-widest uppercase mt-4">
-                The Beginning of Us • Est. 2024
+                The Beginning of Us • Est. 2025 feb 3
               </div>
             </div>
           </main>
 
           {/* Petals */}
           {[
-            { left: "10%", dur: "12s" },
-            { left: "25%", dur: "15s", delay: "2s" },
-            { left: "45%", dur: "18s", delay: "5s" },
-            { left: "65%", dur: "14s", delay: "1s" },
-            { left: "85%", dur: "20s", delay: "3s" },
+            { left: '10%', dur: '12s' },
+            { left: '25%', dur: '15s', delay: '2s' },
+            { left: '45%', dur: '18s', delay: '5s' },
+            { left: '65%', dur: '14s', delay: '1s' },
+            { left: '85%', dur: '20s', delay: '3s' },
           ].map((p, i) => (
             <div
               key={i}
@@ -155,7 +166,7 @@ function Yes() {
               style={{
                 left: p.left,
                 animation: `fall ${p.dur} linear infinite`,
-                animationDelay: p.delay || "0s",
+                animationDelay: p.delay || '0s',
               }}
             >
               favorite

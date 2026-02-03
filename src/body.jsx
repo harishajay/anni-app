@@ -336,7 +336,7 @@ function Body() {
                   </h2>
                   <div className="h-1 w-20 bg-primary/20 rounded-full"></div>
                   <p className="text-primary font-semibold text-xl leading-normal max-w-[720px]">
-                    Three years of laughter, growth, and endless love.
+                    One year of laughter, growth, and endless love.
                   </p>
                 </div>
 
@@ -349,7 +349,7 @@ function Body() {
                     </div>
                     <div className="flex flex-col gap-3">
                       <h3 className="dark:text-white text-xl font-bold leading-tight">
-                        Your Kind Heart
+                        Your Selfless Heart
                       </h3>
                       <p className="text-[#4a363b] dark:text-gray-400 text-base font-normal leading-relaxed">
                         You always know how to make others feel special and
@@ -365,11 +365,11 @@ function Body() {
                     </div>
                     <div className="flex flex-col gap-3">
                       <h3 className="dark:text-white text-xl font-bold leading-tight">
-                        Our Shared Dreams
+                        Taking care of me 
                       </h3>
                       <p className="text-[#4a363b] dark:text-gray-400 text-base font-normal leading-relaxed">
-                        I can't wait to build our future together and travel the
-                        world by your side.
+                        standing by me through every high and low,
+                        and loving me without conditions.
                       </p>
                     </div>
                   </div>
@@ -381,11 +381,11 @@ function Body() {
                     </div>
                     <div className="flex flex-col gap-3">
                       <h3 className="dark:text-white text-xl font-bold leading-tight">
-                        Your Beautiful Smile
+                        Your are my girl
                       </h3>
                       <p className="text-[#4a363b] dark:text-gray-400 text-base font-normal leading-relaxed">
-                        It's the highlight of every single day and my absolute
-                        favorite view.
+                        I always feel that you are perfectly
+                        meant for me in every way.
                       </p>
                     </div>
                   </div>
