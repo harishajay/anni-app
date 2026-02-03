@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ourFam from './assets/images/ourfam.jpg';
-import temIm from './assets/imagestempimg.jpg';
+import temIm from './assets/images/tempimg.jpg';
 import handImg from './assets/images/holgimg.jpg'
 
 function Memories() {
